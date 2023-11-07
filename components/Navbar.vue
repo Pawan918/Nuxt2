@@ -1,8 +1,8 @@
 <template>
-        <div class="flex justify-between items-center h-20 px-12 lg:px-20 bg-white text-black font-averta-bold">
+        <div class="flex justify-between items-center h-20 px-4 lg:px-10 bg-white text-black font-averta-bold">
             <div class="flex items-center justify-center gap-2">
                 <img src="/images/smile.svg" />
-                <div class="flex flex-col text-[#731DD8] font-extrabold sm:text-2xl tex-xl">
+                <div class="flex flex-col text-[#731DD8] font-extrabold lg:text-xl text-sm">
                     <div class="">my<span class="text-[#FF3864]">supermarket</span></div>
                     <div>deals</div>
                 </div>
@@ -17,9 +17,9 @@
                     placeholder="Search..." 
                     @keyup="searchHandler" v-model="searchValue"/>
             </div>
-            <div class="flex gap-6 items-center justify-center ">
-                <NuxtLink to="/login" class="px-3 py-2 rounded-md bg-[#731DD8] text-white cursor-pointer" v-if="!isLoggedIn">Log In</NuxtLink>
-                <div class="px-3 py-2 rounded-md bg-[#731DD8] text-white cursor-pointer " v-if="isLoggedIn" @click="logOutHandler">Log Out</div>
+            <div class="flex gap-4 items-center justify-center ">
+                <NuxtLink to="/login" class="px-3 py-2 rounded-md bg-[#731DD8] text-white cursor-pointer text-xs sm:text-sm" v-if="!isLoggedIn">Log In</NuxtLink>
+                <div class="px-3 py-2 rounded-md bg-[#731DD8] text-white cursor-pointer text-xs sm:text-sm" v-if="isLoggedIn" @click="logOutHandler">Log Out</div>
                 <UDropdown :items="getProductCategoriesObject"  mode="click" :popper="{ placement: 'bottom-end' }"  :ui="{height:'h-60' }">
                     <UIcon name="i-mdi-menu" class="w-7 h-7 cursor-pointer lg:hidden"  />
                 </UDropdown>
