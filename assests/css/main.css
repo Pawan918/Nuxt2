@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: tnd;
+    src: url('../css/fonts/tndBlack.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: tnd-regular;
+    src: url('../css/fonts/tndRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: tnd-semibold;
+    src: url('../css/fonts/tndSemibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: tnd-bold;
+    src: url('../css/fonts/tndBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: tnd-extrabold;
+    src: url('../css/fonts/tndExtrabold.woff2') format('woff2');
+}
+@font-face {
+    font-family: averta-regular;
+    src: url('../css/fonts/AvertaDemoPE-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: averta-extrabold;
+    src: url('../css/fonts/AvertaDemoPE-ExtraboldItalic.woff2') format('woff2');
+}
